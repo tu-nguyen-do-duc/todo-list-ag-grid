@@ -19,7 +19,7 @@ type Todo = {
     priority: string;
     duedate: string;
 }
-function TodoList() {
+export default function TodoList() {
     
     const [todo, setTodo] = useState<Todo>({
         description: "",
@@ -101,5 +101,4 @@ function TodoList() {
         </>
       )
   }
-  
-  export default TodoList;
+
